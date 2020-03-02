@@ -13,6 +13,6 @@ entries:
       title: Color
       url: /core
     output: web
-    title: color
+    title: pcolor
   output: web
   title: Sidebar
