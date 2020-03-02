@@ -2,23 +2,22 @@
 > To provide unified color scheme for altair and seaborn for my own projects
 
 
-This file will become your README and also the index of your documentation.
-
 ## Install
 
-`pip install color`
+`pip install pcolor`
 
 ## How to use
 
-Fill me in please! Don't forget code examples:
+### Altair
 
 ```python
-1+1
+from pcolor.core import setup_altair
+setup_altair()
 ```
 
+### Seaborn
 
-
-
-    2
-
-
+```python
+from pcolor.core import setup_seaborn
+setup_seaborn()
+```
