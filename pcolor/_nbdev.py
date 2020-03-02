@@ -24,7 +24,9 @@ index = {"T": "00_core.ipynb",
          "generate_step_size": "00_core.ipynb",
          "generate_palette": "00_core.ipynb",
          "pal": "00_core.ipynb",
-         "pulsifi_theme": "00_core.ipynb"}
+         "pulsifi_theme": "00_core.ipynb",
+         "setup_altair": "00_core.ipynb",
+         "setup_seaborn": "00_core.ipynb"}
 
 modules = ["core.py"]
 

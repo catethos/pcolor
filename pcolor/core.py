@@ -3,7 +3,7 @@
 __all__ = ['T', 'Matcher', 'Multimethod', 'Color', 'HSV', 'RGB', 'Palette', 'primary_blue', 'primary_black',
            'secondary_red', 'secondary_orange', 'secondary_yellow', 'secondary_green', 'secondary_blue',
            'secondary_purple', 'secondary_palette', 'rgb_hsv', 'hsv_rgb', 'palplot', 'generate_step_size',
-           'generate_palette', 'pal', 'pulsifi_theme']
+           'generate_palette', 'pal', 'pulsifi_theme', 'setup_altair', 'setup_seaborn']
 
 # Cell
 from nbdev.showdoc import *
@@ -135,7 +135,7 @@ def generate_palette(primary_color: Color,
     for i in range(n_colors)])
 
 # Cell
-pal = generate_palette(primary_blue, n_colors=9)
+pal = generate_palette(secondary_green, n_colors=50)
 
 # Cell
 def pulsifi_theme():
@@ -215,5 +215,10 @@ def pulsifi_theme():
 
 
 # Cell
-alt.themes.register("pulsifi_theme", pulsifi_theme)
-alt.themes.enable("pulsifi_theme")
+def setup_altair():
+    alt.themes.register("pulsifi_theme", pulsifi_theme)
+    alt.themes.enable("pulsifi_theme")
+
+# Cell
+def setup_seaborn():
+    sns.set_palette(to_hex(secondary_palette))
